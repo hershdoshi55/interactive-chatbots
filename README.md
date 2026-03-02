@@ -1,8 +1,5 @@
 # Interactive Chatbots: A New Approach from Turn-Based LLMs
 
-**Group 17** — Aryan Amberkar, Vihaansh Majithia, Hersh Doshi, Hanshul Bahl
-University of Illinois Urbana-Champaign
-
 ---
 
 ## Overview
@@ -286,7 +283,7 @@ On average, across valid inputs, the system interrupts after roughly **50–60% 
 ## File Structure
 
 ```
-interactive-chatbots/
+code/
 ├── interruptible_chatbot.py          # Full 3-model chatbot (main entry point)
 ├── train_verification2.py            # Fine-tune DistilBERT verifier (66M params)
 ├── spec_model2.py                    # Fine-tune T5-small speculator (60M params)
@@ -394,7 +391,7 @@ Total locally trained parameters: **~126 million** across both fine-tuned models
 
 ## Related Work
 
-| Paper | Key Quantitative Finding | Relevance |
+| Paper | Key Findings | Relevance |
 |---|---|---|
 | *Speculative Ad-hoc Querying* — Li et al. (UT Austin / Microsoft Research / AWS) | 3 levels of speculation (L0 exact match, L1 subset, L2 directional) | Source of the speculator/over-projector concept |
 | *Single-agent or Multi-agent Systems? Why Not Both?* — Gao et al. (UIUC) | MAS uses 4–220× more prefill tokens, 2–12× more decode tokens; hybrid raised accuracy 1–12% while cutting costs 20–88% | Motivation for confidence-based escalation design |
